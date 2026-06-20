@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for contributing to `typescript-ode`.
+Thank you for contributing to `@animalab-netizen/typescript-ode`.
 
 ## Local Validation
 
@@ -14,4 +14,3 @@ npm test
 - preserve conceptual parity with the ODE family
 - keep examples small and explainable
 - avoid framework lock-in inside the core runtime
-

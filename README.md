@@ -1,6 +1,6 @@
-# typescript-ode
+# @animalab-netizen/typescript-ode
 
-`typescript-ode` is the web and server-side counterpart of the ODE architecture style.
+`@animalab-netizen/typescript-ode` is the web and server-side counterpart of the ODE architecture style.
 
 The package provides a compact architectural runtime for:
 
@@ -18,7 +18,7 @@ The goal is to make application flow easier to standardize, easier to inspect, a
 
 ## Status
 
-`typescript-ode` is prepared as a standalone publishable package and is intended to be consumed by web examples such as `typescript-ode-consumer`.
+`@animalab-netizen/typescript-ode` is prepared as a standalone publishable package and is intended to be consumed by web examples such as `typescript-ode-consumer`.
 
 The package is maintained by ÂnimaLab and is being positioned as the TypeScript member of the same ODE family already expressed in Kotlin and Swift.
 
@@ -26,18 +26,18 @@ The package is maintained by ÂnimaLab and is being positioned as the TypeScript
 
 Current coordinates:
 
-- package: `typescript-ode`
+- package: `@animalab-netizen/typescript-ode`
 - version: `0.2.0`
 
 Installation:
 
 ```bash
-npm install typescript-ode
+npm install @animalab-netizen/typescript-ode
 ```
 
 ## Public API
 
-The intended public surface of `typescript-ode` is centered on these concepts:
+The intended public surface of `@animalab-netizen/typescript-ode` is centered on these concepts:
 
 - `UseCase<P, R>`
 - `UseCaseDispatcher`
@@ -99,7 +99,7 @@ This gives consumers a single, predictable way to trigger business work and rece
 
 ### 3. Outputs
 
-`typescript-ode` uses an explicit output hierarchy:
+`@animalab-netizen/typescript-ode` uses an explicit output hierarchy:
 
 - `ValueOutput<T>`
 - `ErrorOutput<T>`
@@ -138,7 +138,7 @@ This is the bridge between business flow and browser or UI-facing consumers when
 ### Direct UseCase
 
 ```ts
-import { UseCase } from "typescript-ode";
+import { UseCase } from "@animalab-netizen/typescript-ode";
 
 class LoadPokemonUseCase extends UseCase<string, string> {
   protected override async execute(name: string): Promise<string> {
@@ -150,7 +150,7 @@ class LoadPokemonUseCase extends UseCase<string, string> {
 ### Guarded UseCase
 
 ```ts
-import { GuardRejectedError, UseCase } from "typescript-ode";
+import { GuardRejectedError, UseCase } from "@animalab-netizen/typescript-ode";
 
 class ComparePokemonUseCase extends UseCase<{ left: string; right: string }, string> {
   protected override guard(param: { left: string; right: string }) {
@@ -173,7 +173,7 @@ class ComparePokemonUseCase extends UseCase<{ left: string; right: string }, str
 ### ViewModel Example
 
 ```ts
-import { BaseViewModel, type OutputOf, UseCase } from "typescript-ode";
+import { BaseViewModel, type OutputOf, UseCase } from "@animalab-netizen/typescript-ode";
 
 class LoadNameUseCase extends UseCase<void, string> {
   protected override async execute(): Promise<string> {
