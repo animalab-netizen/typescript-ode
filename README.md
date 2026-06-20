@@ -18,11 +18,17 @@ The package provides a compact runtime for:
 
 `typescript-ode` is prepared as a standalone publishable package and is intended to be consumed by web examples such as `typescript-ode-consumer`.
 
+The npm package is maintained by ÂnimaLab and published from the public repository under `animalab-netizen`.
+
 ## Installation
 
 ```bash
 npm install typescript-ode
 ```
+
+Current version:
+
+- `0.2.0`
 
 ## Public API
 
@@ -64,3 +70,9 @@ npm test
 
 See [PUBLICATION.md](/Users/caiosanchezchristino/Desktop/ode-projects/typescript-ode/PUBLICATION.md).
 
+## Community
+
+- [CONTRIBUTING.md](/Users/caiosanchezchristino/Desktop/ode-projects/typescript-ode/CONTRIBUTING.md)
+- [CHANGELOG.md](/Users/caiosanchezchristino/Desktop/ode-projects/typescript-ode/CHANGELOG.md)
+- maintainer: `ÂnimaLab`
+- contact: `animalab.desenvolvimento@gmail.com`

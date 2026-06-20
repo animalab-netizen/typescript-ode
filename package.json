@@ -1,10 +1,21 @@
 {
   "name": "typescript-ode",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Opinionated delivery engine for TypeScript applications.",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/animalab-netizen/typescript-ode",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animalab-netizen/typescript-ode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/animalab-netizen/typescript-ode/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -30,9 +41,10 @@
     "typescript",
     "architecture",
     "usecase",
-    "mvvm"
+    "mvvm",
+    "workflow",
+    "delivery-engine"
   ],
   "author": "ÂnimaLab <animalab.desenvolvimento@gmail.com>",
   "license": "Apache-2.0"
 }
-
