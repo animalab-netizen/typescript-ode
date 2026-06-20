@@ -1,0 +1,38 @@
+{
+  "name": "typescript-ode",
+  "version": "0.1.0",
+  "description": "Opinionated delivery engine for TypeScript applications.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "PUBLICATION.md",
+    "USECASE_GUIDE.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test tests/*.test.mjs"
+  },
+  "keywords": [
+    "ode",
+    "typescript",
+    "architecture",
+    "usecase",
+    "mvvm"
+  ],
+  "author": "ÂnimaLab <animalab.desenvolvimento@gmail.com>",
+  "license": "Apache-2.0"
+}
+
